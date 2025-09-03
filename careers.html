@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Careers - R.L. Anino Dental Clinic</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="icon" type="image/png" href="images/ALogo.png">
+  <link rel="apple-touch-icon" href="images/ALogo.png">
+
+  <!-- Fixed: Removed extra spaces in URLs -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+    main {
+      flex: 1;
+    }
+    footer {
+      margin-top: auto;
+      background-color: #333;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+    .notice-box {
+      background-color: #f8f9fa;
+      border-left: 4px solid #008080;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+    .form-label {
+      font-weight: 500;
+    }
+    .resume-instruction {
+      background-color: #e6f7f8;
+      border: 1px dashed #00a8b0;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: #007a80;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm">
+    <div class="container">
+      
+      <!-- Brand with Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/ALogo.png" alt="R.L. Anino Dental Clinic Logo" width="40" height="40" class="me-2">
+        R.L. Anino Dental Clinic
+      </a>
+
+      <!-- Hamburger Toggle - Fixed -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <!-- About Us Dropdown -->
+<li class="nav-item dropdown" id="aboutDropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button">
+    About Us
+  </a>
+  <ul class="dropdown-menu">
+    
+    <!-- Clinic Overview -->
+    <li>
+      <div class="dropdown-header">🏥 Clinic Overview</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="about.html">Our Story</a></li>
+        <li><a class="dropdown-item" href="about.html#mission">Mission</a></li>
+        <li><a class="dropdown-item" href="about.html#vision">Vision</a></li>
+      </ul>
+    </li>
+
+    <!-- Our Team -->
+    <li>
+      <div class="dropdown-header">👨‍⚕️ Our Team</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="about.html#dentist">Dr. R.L. Anino</a></li>
+        <li><a class="dropdown-item" href="about.html#receptionist">Maria Santos (Receptionist)</a></li>
+        <li><a class="dropdown-item" href="about.html#assistant">John Cruz (Dental Assistant)</a></li>
+      </ul>
+    </li>
+
+    <!-- Patient Care -->
+    <li>
+      <div class="dropdown-header">💖 Patient Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="about.html#comfort">Patient Comfort</a></li>
+        <li><a class="dropdown-item" href="about.html#technology">Modern Technology</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
+        <!-- Services Dropdown -->
+<li class="nav-item dropdown" id="servicesDropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button">
+    Services
+  </a>
+  <ul class="dropdown-menu">
+    
+    <!-- Preventive Care -->
+    <li>
+      <div class="dropdown-header">🦷 Preventive Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="services.html#dental-cleaning">Dental Cleaning</a></li>
+        <li><a class="dropdown-item" href="services.html#dental-checkup">Dental Check-Up</a></li>
+      </ul>
+    </li>
+
+    <!-- Restorative Care -->
+    <li>
+      <div class="dropdown-header">🔧 Restorative Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="services.html#tooth-filling">Tooth Filling</a></li>
+        <li><a class="dropdown-item" href="services.html#tooth-extraction">Tooth Extraction</a></li>
+      </ul>
+    </li>
+
+    <!-- Cosmetic Care -->
+    <li>
+      <div class="dropdown-header">✨ Cosmetic Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="services.html#teeth-whitening">Teeth Whitening</a></li>
+      </ul>
+    </li>
+
+    <!-- Orthodontic Care -->
+    <li>
+      <div class="dropdown-header"> braces Orthodontic Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="services.html#orthodontic">Braces & Alignment</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
+          <li class="nav-item"><a class="nav-link" href="appointment.html">Book Appointment</a></li>
+          <li class="nav-item"><a class="nav-link" href="inquiry.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center mb-5">Careers at R.L. Anino Dental Clinic</h2>
+        <p class="text-center lead">We're hiring! Join our team in Tagum City.</p>
+
+        <!-- Notice Box -->
+        <div class="notice-box">
+          <p><strong>Note:</strong> Submitting this form will open your email app. Your application and resume will be sent directly to our HR team. No data is stored on this website.</p>
+        </div>
+
+        <!-- Job Listings -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5>Dentist</h5>
+            <p>Provide quality dental care to our patients. Must have a valid license.</p>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5>Receptionist</h5>
+            <p>Greet patients, manage appointments, and assist with inquiries. Good communication and organizational skills required.</p>
+          </div>
+        </div>
+
+        <!-- Application Form -->
+        <h3 class="mt-5">Apply Now</h3>
+        <form id="careerForm">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="position" class="form-label">Position Applying For</label>
+              <select class="form-select" id="position" name="position" required>
+                <option value="">Select Position</option>
+                <option value="Dentist">Dentist</option>
+                <option value="Receptionist">Receptionist</option>
+              </select>
+            </div>
+            <div class="col-12 mb-3">
+              <label for="message" class="form-label">Cover Letter / Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Briefly introduce yourself and why you want to join our team." required></textarea>
+            </div>
+
+            <!-- Resume Instruction -->
+            <div class="col-12">
+              <div class="resume-instruction">
+                <i class="bi bi-paperclip"></i> <strong>Resume Attachment:</strong> After clicking "Send", your email app will open. 
+                <strong>Attach your resume file (PDF or Word)</strong> before sending the message.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary w-100">Send Application via Email</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="text-center mt-3">
+          <small>Tip: Prepare your resume file in advance so you can attach it when your email app opens.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="text-center">
+        <p class="mb-1">&copy; 2025 R.L. Anino Dental Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed: Removed extra spaces in script URL -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('careerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const position = document.getElementById('position').value;
+      const message = document.getElementById('message').value;
+
+      const subject = `Job Application - ${position}`;
+      const body = `Name: ${fullName}%0AEmail: ${email}%0APhone: ${phone}%0APosition: ${position}%0A%0AMessage:%0A${message}%0A%0A[Please attach your resume file (PDF or Word) before sending.]`;
+
+      window.location.href = `mailto:hr@rlanoindental.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</body>
+</html>

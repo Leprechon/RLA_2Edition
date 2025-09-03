@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - R.L. Anino Dental Clinic</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="icon" type="image/png" href="images/ALogo.png">
+  <link rel="apple-touch-icon" href="images/ALogo.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm">
+    <div class="container">
+      
+      <!-- Brand with Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/ALogo.png" alt="R.L. Anino Dental Clinic Logo" width="40" height="40" class="me-2">
+        R.L. Anino Dental Clinic
+      </a>
+
+      <!-- Hamburger Toggle - Fixed -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          
+   <!-- About Us Dropdown -->
+<li class="nav-item dropdown" id="aboutDropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button">
+    About Us
+  </a>
+  <ul class="dropdown-menu">
+    
+    <!-- Clinic Overview -->
+    <li>
+      <div class="dropdown-header">🏥 Clinic Overview</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="about.html">Our Story</a></li>
+        <li><a class="dropdown-item" href="about.html#mission">Mission</a></li>
+        <li><a class="dropdown-item" href="about.html#vision">Vision</a></li>
+      </ul>
+    </li>
+
+    <!-- Our Team -->
+    <li>
+      <div class="dropdown-header">👨‍⚕️ Our Team</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="about.html#dentist">Dr. R.L. Anino</a></li>
+        <li><a class="dropdown-item" href="about.html#receptionist">Maria Santos (Receptionist)</a></li>
+        <li><a class="dropdown-item" href="about.html#assistant">John Cruz (Dental Assistant)</a></li>
+      </ul>
+    </li>
+
+    <!-- Patient Care -->
+    <li>
+      <div class="dropdown-header">💖 Patient Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="about.html#comfort">Patient Comfort</a></li>
+        <li><a class="dropdown-item" href="about.html#technology">Modern Technology</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
+        <!-- Services Dropdown -->
+<li class="nav-item dropdown" id="servicesDropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button">
+    Services
+  </a>
+  <ul class="dropdown-menu">
+    
+    <!-- Preventive Care -->
+    <li>
+      <div class="dropdown-header">🦷 Preventive Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="services.html#dental-cleaning">Dental Cleaning</a></li>
+        <li><a class="dropdown-item" href="services.html#dental-checkup">Dental Check-Up</a></li>
+      </ul>
+    </li>
+
+    <!-- Restorative Care -->
+    <li>
+      <div class="dropdown-header">🔧 Restorative Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="services.html#tooth-filling">Tooth Filling</a></li>
+        <li><a class="dropdown-item" href="services.html#tooth-extraction">Tooth Extraction</a></li>
+      </ul>
+    </li>
+
+    <!-- Cosmetic Care -->
+    <li>
+      <div class="dropdown-header">✨ Cosmetic Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="services.html#teeth-whitening">Teeth Whitening</a></li>
+      </ul>
+    </li>
+
+    <!-- Orthodontic Care -->
+    <li>
+      <div class="dropdown-header"> braces Orthodontic Care</div>
+      <ul class="nested-menu">
+        <li><a class="dropdown-item" href="services.html#orthodontic">Braces & Alignment</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
+          <li class="nav-item"><a class="nav-link" href="appointment.html">Book Appointment</a></li>
+          <li class="nav-item"><a class="nav-link" href="inquiry.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>About R.L. Anino Dental Clinic</h2>
+          <p>Located in Tagum City, R.L. Anino Dental Clinic is committed to providing quality dental care with a focus on patient comfort, hygiene, and efficiency.</p>
+          <p>We understand that visiting the dentist can be stressful, which is why we’ve created a welcoming environment and a streamlined process to make your experience as smooth as possible.</p>
+          <p>Our clinic uses a modern, web-based management system to automate appointments, billing, and communication — reducing wait times and improving service accuracy.</p>
+          <ul>
+            <li><i class="bi bi-check-circle-fill" style="color: var(--dental-teal);"></i> No more double-booking</li>
+            <li><i class="bi bi-check-circle-fill" style="color: var(--dental-teal);"></i> Secure online payments (GCash/PayPal)</li>
+            <li><i class="bi bi-check-circle-fill" style="color: var(--dental-teal);"></i> Easy online booking (no login required)</li>
+            <li><i class="bi bi-check-circle-fill" style="color: var(--dental-teal);"></i> Direct communication via inquiry form</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="https://placehold.co/600x400/008080/FFFFFF?text=Dental+Clinic" alt="Dental Clinic" class="img-fluid rounded"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+<section class="section bg-light" id="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5><i class="bi bi-compass"></i> Mission</h5>
+            <p>To provide accessible, high-quality dental care using modern technology and compassionate service.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" id="vision">
+        <div class="card">
+          <div class="card-body">
+            <h5><i class="bi bi-eye"></i> Vision</h5>
+            <p>To be the most trusted dental clinic in Tagum City through excellence in care and innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team -->
+<section class="section" id="team">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color: var(--logo-primary);">Our Team</h2>
+    <div class="row">
+      <div class="col-md-4 text-center" id="dentist">
+        <img src="https://placehold.co/200x200/008080/FFFFFF?text=Dr.+Anino" class="rounded-circle mb-3" width="120" alt="Dentist">
+        <h5>Dr. R.L. Anino</h5>
+        <p>Clinic Owner & Lead Dentist</p>
+      </div>
+      <div class="col-md-4 text-center" id="receptionist">
+        <img src="https://placehold.co/200x200/008080/FFFFFF?text=Receptionist" class="rounded-circle mb-3" width="120" alt="Receptionist">
+        <h5>Maria Santos</h5>
+        <p>Receptionist</p>
+      </div>
+      <div class="col-md-4 text-center" id="assistant">
+        <img src="https://placehold.co/200x200/008080/FFFFFF?text=Staff" class="rounded-circle mb-3" width="120" alt="Staff">
+        <h5>John Cruz</h5>
+        <p>Dental Assistant</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Patient Care -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" id="comfort">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5><i class="bi bi-heart"></i> Patient Comfort</h5>
+            <p>We prioritize your comfort with a calming environment and gentle care.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" id="technology">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5><i class="bi bi-laptop"></i> Modern Technology</h5>
+            <p>Our web-based system streamlines appointments, billing, and communication.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 R.L. Anino Dental Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
