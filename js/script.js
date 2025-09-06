@@ -37,38 +37,45 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ====== 3. Fix Dropdown Links: Allow "About Us" & "Services" to Navigate ======
-  // Bootstrap blocks href when data-bs-toggle="dropdown" is present
+  // Fix dropdowns on mobile: Tap to open, tap sub-item to navigate
+document.addEventListener('DOMContentLoaded', function () {
   const dropdownToggles = document.querySelectorAll('.dropdown-toggle[href]:not([href="#"])');
-  
+
   dropdownToggles.forEach(toggle => {
     toggle.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-      const isDropdownOpen = this.classList.contains('show');
+      const isMobile = window.innerWidth <= 991;
 
-      // If dropdown is already open, follow the link immediately
-      if (isDropdownOpen) {
-        setTimeout(() => {
-          window.location.href = href;
-        }, 100);
-        e.preventDefault(); // Prevent re-triggering dropdown
-      } else {
-        // First click: open dropdown
-        // Allow Bootstrap to handle dropdown toggle
+      if (isMobile) {
+        e.preventDefault(); // Prevent navigation on first tap
+
+        const menu = this.nextElementSibling;
+        menu.classList.toggle('show');
       }
+      // On desktop: allow hover + click to navigate
     });
   });
 
-  // Close dropdowns when clicking outside
+  // Close dropdown when clicking outside
   document.addEventListener('click', function (e) {
     if (!e.target.closest('.dropdown')) {
       document.querySelectorAll('.dropdown-menu').forEach(menu => {
         menu.classList.remove('show');
       });
-      document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-        toggle.classList.remove('show');
-      });
     }
   });
+
+  // Close dropdown when resizing to desktop
+  let isMobile = window.innerWidth <= 991;
+  window.addEventListener('resize', () => {
+    const isNowMobile = window.innerWidth <= 991;
+    if (!isNowMobile && isMobile) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.classList.remove('show');
+      });
+    }
+    isMobile = isNowMobile;
+  });
+});
 
   // ====== 4. Smooth Scroll for Anchor Links (e.g., #mission, #vision) ======
   document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
@@ -125,21 +132,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-// Fade in welcome section on scroll
-const welcomeSection = document.querySelector('.section.bg-light');
-if (welcomeSection) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
-
-  welcomeSection.style.opacity = '0';
-  welcomeSection.style.transform = 'translateY(20px)';
-  welcomeSection.style.transition = 'all 0.8s ease';
-  observer.observe(welcomeSection);
-}
